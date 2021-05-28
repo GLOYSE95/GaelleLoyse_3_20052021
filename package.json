@@ -1,0 +1,19 @@
+{
+  "name": "p3_loyse_gaelle",
+  "version": "1.0.0",
+  "description": "Projet P3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GLOYSE95/GaelleLoyse_3_20052021.git"
+  },
+  "author": "gloyse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021/issues"
+  },
+  "homepage": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021#readme"
+}
