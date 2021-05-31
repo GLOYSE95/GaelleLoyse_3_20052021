@@ -1,14 +1,11 @@
 html {
   font-size: 1rem;
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.03em;
+  box-sizing: border-box;
 }
 
 body {
-  color: #9356DC;
-  width: auto;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "roboto", arial, Arial, Helvetica, sans-serif;
 }
 
@@ -16,23 +13,54 @@ h1, h2 {
   font-weight: 900;
 }
 
-.menus__articles {
-  width: 100%;
+h1 {
+  font-size: 0.8rem;
 }
 
-header {
-  background-color: darkgray;
-  text-align: center;
+.header {
+  margin: 5%, 0, 5%, 0;
+}
+.header __logo img {
+  width: 50%;
 }
 
-.header__logo {
-  background-color: white;
-  padding: 1rem 0 1rem 0;
+.fonction {
+  display: flex;
+  flex-direction: column;
 }
 
-footer {
-  background-color: black;
-  color: white;
+.resto {
+  padding: 6%;
+  background-color: lightgray;
+}
+.resto__article {
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em grey;
+}
+
+.articleImg {
+  overflow: hidden;
+  object-fit: cover;
+  height: 185px;
+  border-radius: 1em 1em 0 0;
+}
+
+.img__palette {
+  width: 102%;
+  object-position: 0 -55px;
+}
+.img__note {
+  width: 105%;
+  object-position: 0 -155px;
+}
+.img__franc {
+  width: 105%;
+  object-position: -5px -55px;
+}
+.img__delice {
+  width: 105%;
+  object-position: 0 -55px;
 }
 
 /*# sourceMappingURL=style.css.map */

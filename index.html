@@ -11,63 +11,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" media="screen and (max-width : 768px)" href="css/stylesheetmobile.css" >
+    <link type="text/css" rel="stylesheet" media="screen and (max-width : 768px)" href="css/style.css" >
 </head>
 
 <body>
     
-    <header>
-        <div class="header__logo"><img src="imports/ohmyfood@2x.svg" alt="logo Ohmyfood"></div>
+    <header class="header">
+        <img class="header__logo" src="imports/ohmyfood@2x.svg" alt="logo Ohmyfood">
         
         <div class="header__search"><input type="text" placeholder="Paris, Beleville"></div>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, <br>
-           sélectionnés par nos soins.
-        </p>
+        <div>
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, <br>
+            sélectionnés par nos soins.</p>
+        </div>
             <button>Explorer nos restaurants</button>
     </header>
 
     <section class="fonction">
         <h2>Fonctionnement</h2>
-        <button>Choisissez un restaurant</button>
-        <button>Choisissez votre menu</button>
-        <button>Dégustez au restaurant</button>
-    </section>
+        <div>Choisissez un restaurant</div>
+        <div>Choisissez votre menu</div>
+        <div>Dégustez au restaurant</div>
+    </section>-->
     
-    <section class="menus">
+    <section class="resto">
         <h2>Restaurants</h2>
 
-        <article class="menus__article">
-            <div><img src="imports/la_palette_1100px.jpg" alt="La palette à du goût"></div>
+        <article class="resto__article">
+            <div class="articleImg">
+                <img class="img__palette" src="imports/la_palette_1100px.jpg" alt="La palette à du goût">
+            </div>
             <div clas="article__nouveau">Nouveau</div>
-            <h3>La palette à du goût</h3>
-            <p>Ménilmontant</p>
-            <div class="article__aime"></div>
+            <div class="resto__title">
+                <h3>La palette à du goût</h3>
+                <p>Ménilmontant</p>
+                <div class="article__aime"></div>
+            </div>
         </article>
 
-        <article class="menus__article">
-            <div><img src="imports/la_note_1100px.jpg" alt="La note encantée"></div>
+        <article class="resto__article">
+            <div class="articleImg">
+                <img class= "img__note" src="imports/la_note_1100px.jpg" alt="La note enchantée">
+            </div>
             <div clas="article__nouveau">Nouveau</div>
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
-            <div class="article__aime"></div>
+            <div class="resto__title">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+                <div class="article__aime"></div>
+            </div>
         </article>
 
-        <article  class="menus__article">
-            <div><img src="imports/a_la_fr_1100px.jpg" alt="A la française"></div>
-            <h3>à la française</h3>
-            <p>Cité rouge</p>
-            <div class="article__aime"></div>
+        <article class="resto__article">
+            <div class="articleImg">
+                <img class= "img__franc" src="imports/a_la_fr_1100px.jpg" alt="A la française">
+            </div>
+            <div class="resto__title">
+                <h3>à la française</h3>
+                <p>Cité rouge</p>
+                <div class="article__aime"></div>
+            </div>
         </article> 
 
-        <article class="menus__article">
-            <div><img src="imports/le_delice_1100px.jpg" alt="Le délice des sens"></div>
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-            <div class="article__aime"></div>
+        <article class="resto__article">
+            <div class="articleImg">
+                <img  class= "img__delice" src="imports/le_delice_1100px.jpg" alt="Le délice des sens">
+            </div>
+            <div class="resto__title">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+                <div class="article__aime"></div>
+            </div>
         </article>
 
-        <footer>
+        <!--<footer>
             <div class="footer__logo"><img src="imports/ohmyfoodwhite.png" alt="logo Ohmyfood"></div>
             <ul clas="footer__list">
                 <li>Proposer un restaurant</li>
@@ -76,7 +93,7 @@
                 <li>Contact</li>
             </ul>
 
-        </footer>
+        </footer> -->
     </section>
 
 

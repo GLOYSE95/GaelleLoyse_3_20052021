@@ -1,0 +1,59 @@
+h1 {
+    font-size : 0.8rem
+}
+
+.header{
+    margin : 5%, 0, 5%,0;
+    __logo img {
+    width : 50%;}
+    }     
+
+.fonction {
+    display: flex;
+    flex-direction: column;
+    }
+
+.resto {
+    padding:6%;
+    background-color: lightgray;
+    &__article {
+        background : white;
+        border-radius: 1em;
+        box-shadow: 0 0 0.5em grey;
+        }
+    }
+
+.articleImg {
+    overflow: hidden;
+    object-fit : cover;
+    height: 185px;
+    border-radius: 1em 1em 0 0;
+    }
+    
+.img {
+    &__palette {
+        width: 102%;
+        object-position: 0 -55px;
+        }
+    &__note {
+        width: 105%;
+        object-position: 0 -155px;
+        }  
+    &__franc {
+        width: 105%;
+        object-position: -5px -55px;
+        } 
+    &__delice {
+        width: 105%;
+        object-position: 0 -55px;
+        } 
+    }
+ 
+     
+    
+
+           
+
+          
+            
+          
