@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" media="screen and (max-width : 768px)" href="css/style.css" >
+    <script src="https://kit.fontawesome.com/27bb4d388f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,21 +20,39 @@
     <header class="header">
         <img class="header__logo" src="imports/ohmyfood@2x.svg" alt="logo Ohmyfood">
         
-        <div class="header__search"><input type="text" placeholder="Paris, Beleville"></div>
-        <div>
-            <h1>Réservez le menu qui vous convient</h1>
+        <div class="header__search">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <input type="text" placeholder="Paris, Beleville">
+        </div>
+        <div class="header__reserved">
+            <h1>Réservez le menu qui <br> vous convient</h1>
             <p>Découvrez des restaurants d'exception, <br>
             sélectionnés par nos soins.</p>
+            <button type="button" class="explore">Explorer nos restaurants</button>
         </div>
-            <button>Explorer nos restaurants</button>
     </header>
 
     <section class="fonction">
         <h2>Fonctionnement</h2>
-        <div>Choisissez un restaurant</div>
-        <div>Choisissez votre menu</div>
-        <div>Dégustez au restaurant</div>
-    </section>-->
+        <div class="fonction__text">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <p><strong>Choisissez un restaurant</strong></p>
+            <div class="bullet"><p> 1 </p></div>
+        </div>
+
+        <div class="fonction__text fonction__text--hover">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <p><strong>Choisissez votre menu</strong></p>
+            <div class="bullet"><p> 2 </p></div>
+        </div>
+
+        <div class="fonction__text fonction__text--hover">
+            <i class="fa fa-store"></i>
+            <p><strong>Dégustez au restaurant</strong></p>
+            <div class="bullet"><p> 3 </p></div>
+        </div>
+
+    </section>
     
     <section class="resto">
         <h2>Restaurants</h2>
@@ -42,11 +61,13 @@
             <div class="articleImg">
                 <img class="img__palette" src="imports/la_palette_1100px.jpg" alt="La palette à du goût">
             </div>
-            <div clas="article__nouveau">Nouveau</div>
+            <div class="article__nouveau">Nouveau</div>
             <div class="resto__title">
-                <h3>La palette à du goût</h3>
+                <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
-                <div class="article__aime"></div>
+                <div class="article__like">
+                    <i class="far fa-heart"></i>
+                </div>
             </div>
         </article>
 
@@ -54,11 +75,13 @@
             <div class="articleImg">
                 <img class= "img__note" src="imports/la_note_1100px.jpg" alt="La note enchantée">
             </div>
-            <div clas="article__nouveau">Nouveau</div>
+            <div class="article__nouveau">Nouveau</div>
             <div class="resto__title">
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
-                <div class="article__aime"></div>
+                <div class="article__like">
+                    <i class="far fa-heart"></i>
+                </div>
             </div>
         </article>
 
@@ -67,9 +90,11 @@
                 <img class= "img__franc" src="imports/a_la_fr_1100px.jpg" alt="A la française">
             </div>
             <div class="resto__title">
-                <h3>à la française</h3>
+                <h3>À la française</h3>
                 <p>Cité rouge</p>
-                <div class="article__aime"></div>
+                <div class="article__like">
+                    <i class="far fa-heart"></i>
+                </div>
             </div>
         </article> 
 
@@ -80,21 +105,23 @@
             <div class="resto__title">
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
-                <div class="article__aime"></div>
+                <div class="article__like">
+                    <i class="far fa-heart"></i>
+                </div>
             </div>
         </article>
+    </section>
 
-        <!--<footer>
+
+        <footer class="footer">
             <div class="footer__logo"><img src="imports/ohmyfoodwhite.png" alt="logo Ohmyfood"></div>
             <ul clas="footer__list">
-                <li>Proposer un restaurant</li>
-                <li>Devenir partenaire</li>
+                <li><i class="fa fa-cutlery" aria-hidden="true"></i>Proposer un restaurant</li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i>Devenir partenaire</li>
                 <li>Mentions légales</li>
-                <li>Contact</li>
+                <li><a href="mailto:ohmyfood@serveur.com">Contact</a></li>
             </ul>
-
-        </footer> -->
-    </section>
+        </footer>
 
 
 </body>

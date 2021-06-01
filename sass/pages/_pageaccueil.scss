@@ -1,43 +1,133 @@
-h1 {
-    font-size : 0.8rem
-}
+
 
 .header{
-    margin : 5%, 0, 5%,0;
-    __logo img {
-    width : 50%;}
-    }     
+    margin-top : 6%;
+    img {
+        width : 50%;
+        margin: auto;
+        display: flex;
+        padding-bottom: 6%;}
+    }    
+    
+.header__search {
+    background-color: lightgrey;
+    border-top: 0.2em solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .fa {color: black;
+        }
+    input {
+        line-height: 3em;
+        border: 0;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 1.2em;
+        }
+    } 
+    
+.header__reserved {
+    background-color: $colors-background;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    h1 {
+        font-size: 1.6em;}
+        p {
+            font-size: 1.2em;}
+    }
+
+.header__reserved .explore {
+    border-radius: 30px;
+    border: 0;
+    line-height: 3;
+    padding: 0 1.5em;
+    margin: 1.8em;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: $colors-secondary;
+    background-image: linear-gradient($colors-secondary 0%, rgba(0.8, 0, 0, 0.3) 100%);
+    }
+
+.fonction h2 {
+    margin-left : 6%;
+    }
 
 .fonction {
     display: flex;
     flex-direction: column;
+    &__text {
+        background-color: #e9e7e9;
+        padding: 1.7em;
+        border-radius: 1.5em;
+        box-shadow: 0 5px 0.5em grey;
+        margin-bottom: 1.5em;
+        margin-right: 6%;
+        margin-left: 10%;
+        display: flex;
+        position: relative;
+        &:hover{
+            background-color: $colors-secondary;}
+        }
+    } 
+div .fa {
+    margin: 0 0.7em 0 0.4em;
     }
+.fa, .fa-store {
+        font-size: 1.5em;
+        color: grey;
+        }
+.bullet {
+    position: absolute;
+    background-color: #FF79DA;
+    border-radius: 1.2em;
+    padding: 0.2em 0.6em;
+    color: white;
+    left: -6%;
+}
 
 .resto {
+    margin-top: 12%;
     padding:6%;
-    background-color: lightgray;
+    background-color: $colors-background;
     &__article {
+        position: relative;
         background : white;
         border-radius: 1em;
         box-shadow: 0 0 0.5em grey;
+        margin-bottom: 6%;
+        }
+        &__title { padding: 10px;
         }
     }
 
+.article__nouveau {
+    position :absolute;
+    top : 15px;
+    right : 15px;
+    background-color: $colors-tertiaire;
+    color : $colors-nouveau;
+    padding : 0.5em 0.8em;
+    font-weight: 900;
+    font-size: 1em;
+    }
+
+
 .articleImg {
     overflow: hidden;
-    object-fit : cover;
-    height: 185px;
+    object-fit : contain;
+    height: 180px;
     border-radius: 1em 1em 0 0;
     }
     
 .img {
     &__palette {
         width: 102%;
-        object-position: 0 -55px;
+        object-position: 0 -45px;
         }
     &__note {
         width: 105%;
-        object-position: 0 -155px;
+        object-position: -10px -155px;
         }  
     &__franc {
         width: 105%;
@@ -49,7 +139,12 @@ h1 {
         } 
     }
  
-     
+.article__like {
+    position: absolute;
+    left: 85%;
+    font-size: 1.6em;
+    bottom: 20px;
+    }    
     
 
            
