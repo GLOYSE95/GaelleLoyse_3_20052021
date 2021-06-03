@@ -64,20 +64,9 @@ p {
   font-size: 1.2em;
 }
 
-.header__reserved .explore {
-  border-radius: 30px;
-  border: 0;
-  line-height: 3;
-  padding: 0 1.5em;
-  margin: 1.8em;
-  font-size: 1.1rem;
-  color: #fff;
-  background-color: #FF79DA;
-  background-image: linear-gradient(#FF79DA 0%, rgba(1, 0, 0, 0.3) 100%);
-}
-
 .fonction h2 {
   margin-left: 6%;
+  margin-top: 12%;
 }
 
 .fonction {
@@ -183,7 +172,7 @@ div .fa {
 .footer__logo {
   text-align: left;
 }
-.footer img {
+.footer__logo img {
   width: 30%;
 }
 
@@ -206,6 +195,18 @@ div .fa {
 }
 .footer ul a:hover {
   color: #FF79DA;
+}
+
+.buttonOhmyfood {
+  border-radius: 30px;
+  border: 0;
+  line-height: 3;
+  padding: 0 1.5em;
+  margin: 1.8em 0 1.8em 0;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA 0%, rgba(1, 0, 0, 0.3) 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

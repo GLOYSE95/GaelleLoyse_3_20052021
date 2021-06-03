@@ -4,8 +4,10 @@
   "description": "Projet P3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass style": "sass --watch ./sass/style.scss:./css/style.css",
+    "sass menu": "sass --watch ./sass/menu.scss:./css/stylemenu.css"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GLOYSE95/GaelleLoyse_3_20052021.git"

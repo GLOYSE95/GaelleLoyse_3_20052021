@@ -1,12 +1,12 @@
 
 
 .header{
-    margin-top : 6%;
+    margin-top : $padding-size;
     img {
         width : 50%;
         margin: auto;
         display: flex;
-        padding-bottom: 6%;}
+        padding-bottom: $padding-size;}
     }    
     
 .header__search {
@@ -37,20 +37,9 @@
             font-size: 1.2em;}
     }
 
-.header__reserved .explore {
-    border-radius: 30px;
-    border: 0;
-    line-height: 3;
-    padding: 0 1.5em;
-    margin: 1.8em;
-    font-size: 1.1rem;
-    color: #fff;
-    background-color: $colors-secondary;
-    background-image: linear-gradient($colors-secondary 0%, rgba(0.8, 0, 0, 0.3) 100%);
-    }
-
 .fonction h2 {
-    margin-left : 6%;
+    margin-left: $padding-size;
+    margin-top: $padding-size *2;
     }
 
 .fonction {
@@ -62,7 +51,7 @@
         border-radius: 1.5em;
         box-shadow: 0 5px 0.5em grey;
         margin-bottom: 1.5em;
-        margin-right: 6%;
+        margin-right: $padding-size;
         margin-left: 10%;
         display: flex;
         position: relative;
@@ -87,15 +76,15 @@ div .fa {
 }
 
 .resto {
-    margin-top: 12%;
-    padding:6%;
+    margin-top: $padding-size *2;
+    padding: $padding-size;
     background-color: $colors-background;
     &__article {
         position: relative;
         background : white;
         border-radius: 1em;
-        box-shadow: 0 0 0.5em grey;
-        margin-bottom: 6%;
+        box-shadow: $shadow;
+        margin-bottom: $padding-size;
         }
         &__title { padding: 10px;
         }
