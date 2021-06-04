@@ -1,5 +1,3 @@
-
-
 .header{
     margin-top : $padding-size;
     img {
@@ -15,9 +13,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    .fa {color: black;
-        }
-    input {
+        .fa {color: black;
+            }
+        input {
         line-height: 3em;
         border: 0;
         background-color: transparent;
@@ -44,21 +42,32 @@
 
 .fonction {
     display: flex;
-    flex-direction: column;
-    &__text {
-        background-color: #e9e7e9;
+    flex-direction: column;}
+
+.fonction__text {
+        background-color: $colors-background;
         padding: 1.7em;
         border-radius: 1.5em;
-        box-shadow: 0 5px 0.5em grey;
-        margin-bottom: 1.5em;
+        box-shadow: $shadow-size $color-shadow;
+        margin-bottom: $padding-size;
         margin-right: $padding-size;
         margin-left: 10%;
         display: flex;
         position: relative;
         &:hover{
-            background-color: $colors-secondary;}
-        }
-    } 
+            background-color: $colors-primaryLight ;
+            @include shadow-all__hover;
+            div .fa {
+                color : $colors-primary;}
+            .bullet {
+                    background-color: $colors-primary;}
+            }
+           }   
+
+.fonction__line {
+    display : flex;
+    }    
+
 div .fa {
     margin: 0 0.7em 0 0.4em;
     }
@@ -83,7 +92,7 @@ div .fa {
         position: relative;
         background : white;
         border-radius: 1em;
-        box-shadow: $shadow;
+        @include shadow-all;
         margin-bottom: $padding-size;
         }
         &__title { padding: 10px;
@@ -112,7 +121,7 @@ div .fa {
 .img {
     &__palette {
         width: 102%;
-        object-position: 0 -45px;
+        object-position: 0 -35px;
         }
     &__note {
         width: 105%;
@@ -120,11 +129,11 @@ div .fa {
         }  
     &__franc {
         width: 105%;
-        object-position: -5px -55px;
+        object-position: -5px -45px;
         } 
     &__delice {
         width: 105%;
-        object-position: 0 -55px;
+        object-position: 0 -50px;
         } 
     }
  

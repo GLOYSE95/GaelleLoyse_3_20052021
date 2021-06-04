@@ -8,4 +8,10 @@
     color: #fff;
     background-color: $colors-secondary;
     background-image: linear-gradient($colors-secondary 0%, rgba(0.8, 0, 0, 0.3) 100%);
+    @include shadow-all; }   
+
+    
+.buttonOhmyfood:focus {
+        @include shadow-all__hover;
+        background-image: linear-gradient($colors-secondary 50%, rgba(156, 20, 136, 0) 100%);
     }
