@@ -1,21 +1,28 @@
+@keyframes animDescript {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  30% {
+    opacity: 0.2; }
+  80%, 100% {
+    opacity: 1; }
+  100% {
+    transform: translateY(0); } }
+
 html {
   font-size: 1rem;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "roboto", arial, Arial, Helvetica, sans-serif;
-}
+  font-family: "roboto", arial, Arial, Helvetica, sans-serif; }
 
 .menu {
-  padding: 0 6%;
-}
+  padding: 0 6%; }
 
 h1 {
-  font-family: Shrikhand, arial, Helvetica, sans-serif;
-}
+  font-family: Shrikhand, arial, Helvetica, sans-serif; }
 
 h2 {
   font-weight: 400;
@@ -23,123 +30,213 @@ h2 {
   margin: 0;
   border-bottom: 3px solid #99E2D0;
   width: 12%;
-  padding-top: 12%;
-}
+  padding-top: 12%; }
 
 h3 {
   margin: 0;
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 p {
   margin: 2px;
   font-size: 0.8em;
-}
+  line-height: 1.4em; }
 
 strong {
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 .headerMenus {
-  margin-top: 6%;
-}
-.headerMenus__top {
-  display: flex;
-  justify-content: flex-start;
-}
+  margin-top: 6%; }
+  .headerMenus__top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .headerMenus__top i {
+      color: black;
+      position: absolute;
+      left: 6%;
+      line-height: 0; }
+    .headerMenus__top img {
+      width: 40%; }
 
 .fa-arrow-left {
-  font-size: 1.5em;
-  padding-right: 12%;
-  padding-left: 6%;
-}
-
-.header__logo img {
-  width: 50%;
-  margin: auto;
-  padding-bottom: 6%;
-}
+  font-size: 1.5em; }
 
 .headerMenus__Resto {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 250px;
   margin-top: 6%;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
 .headerMenus__Resto img {
-  width: 100%;
-}
+  position: absolute;
+  width: 120%;
+  bottom: 15%;
+  left: -10%;
+  transform: translate 0, 5%; }
 
 .headerMenus__title {
   position: absolute;
   width: 88%;
-  top: 185px;
+  bottom: -1%;
   background-color: #e9e7e9;
   border-radius: 50px 50px 0 0;
   font-size: 0.7em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6% 6% 2% 6%;
-}
-.headerMenus__title .fa-heart {
+  padding: 6% 6% 2% 6%; }
+
+.heart__active {
+  color: #FF79DA;
+  opacity: 0; }
+
+.titleHeart {
+  width: 40Px;
+  height: 30px;
+  position: absolute;
+  right: 6%;
   font-weight: 400;
-  font-size: 2.3em;
-  padding-right: 6%;
-}
+  font-size: 2.3em; }
+  .titleHeart:hover :nth-child(1) {
+    display: none; }
+  .titleHeart:hover :nth-child(2) {
+    opacity: 1;
+    transition: opacity 1s; }
+
+@media screen and (min-width: 768px) {
+  .headerMenus__top img {
+    width: 20%; }
+  .headerMenus__Resto {
+    height: 400px; }
+  .headerMenus__Resto img {
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .headerMenus__title {
+    min-width: 50%;
+    max-width: 80%;
+    top: 80%;
+    bottom: 0%;
+    border-radius: 0 50px 0 0;
+    font-size: 1em;
+    padding: 0 0 0 6%; } }
 
 .menu {
   width: 88%;
-  background-color: #e9e7e9;
-}
+  background-color: #e9e7e9; }
 
-.menu__desription {
+.meal {
+  animation: animDescript 2000ms 150ms both;
+  animation-timing-function: ease-in-out; }
+
+.description {
+  width: 85%;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform-origin: left;
+  transition: all 0.8s ease-in-out; }
+
+.price {
+  display: block;
+  position: absolute;
+  top: 52%;
+  right: 3%;
+  transform: translate(0%, 0%);
+  transition-duration: 0.5s; }
+
+.meal {
+  position: relative;
   border-radius: 0.8em;
   background-color: white;
-  box-shadow: 0 0 0.5em grey;
+  box-shadow: 0 0 0.5em #bdbdbd;
   padding: 0.4em 0.8em;
   margin-top: 1em;
-}
+  cursor: pointer; }
+  .meal:hover .description div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1.25em;
+    width: 200px; }
+  .meal:hover .price {
+    transform: translate(-220%, 0%); }
+  .meal:hover .meal__confirm {
+    transform: scaleX(1); }
+  .meal:hover span i {
+    transform: rotate(0deg);
+    transition-duration: 500ms; }
+
+.meal__confirm {
+  background-color: #99E2D0;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 100%;
+  border-radius: 0 0.4em 0.4em 0;
+  line-height: 2.1;
+  text-align: center;
+  font-size: 1.5em;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 500ms 0.2s ease-in-out both; }
+  .meal__confirm span i {
+    transform: rotate(-180deg); }
 
 .commande {
-  text-align: center;
-}
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%; }
+  .description {
+    width: 85%;
+    height: 60px;
+    max-height: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; } }
 
 .footer {
   background-color: black;
   padding: 6%;
-  color: white;
-}
-.footer__logo {
-  text-align: left;
-}
-.footer__logo img {
-  width: 30%;
-}
+  color: white; }
+  .footer__logo {
+    text-align: left; }
+    .footer__logo img {
+      width: 30%; }
 
 .footer ul {
-  padding: 0;
-}
-.footer ul li {
-  list-style-type: none;
-  line-height: 2em;
-}
-.footer ul li i {
-  font-size: 0.8em;
-  color: white;
-  padding-right: 0.8em;
-}
+  padding: 0; }
+  .footer ul li {
+    list-style-type: none;
+    line-height: 2em; }
+    .footer ul li i {
+      font-size: 0.8em;
+      color: white;
+      padding-right: 0.8em; }
 
 .footer ul a {
   text-decoration: none;
-  color: white;
-}
-.footer ul a:hover {
-  color: #FF79DA;
-}
+  color: white; }
+  .footer ul a:hover {
+    color: #FF79DA; }
 
+/*vertical-align: 15%  fa-rotate-90*/
 .buttonOhmyfood {
   border-radius: 30px;
   border: 0;
@@ -150,6 +247,8 @@ strong {
   color: #fff;
   background-color: #FF79DA;
   background-image: linear-gradient(#FF79DA 0%, rgba(1, 0, 0, 0.3) 100%);
-}
+  box-shadow: 0 0 0.5em #bdbdbd; }
 
-/*# sourceMappingURL=stylemenu.css.map */
+.buttonOhmyfood:focus {
+  box-shadow: 0 0 0.5em #575757;
+  background-image: linear-gradient(#FF79DA 50%, rgba(156, 20, 136, 0) 100%); }

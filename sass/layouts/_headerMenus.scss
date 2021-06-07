@@ -1,28 +1,27 @@
 .headerMenus {
     margin-top : $padding-size;
-        &__top {    
+        &__top {  
+            position: relative;  
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding-left: $padding-size;
-            padding-right: 20%;
-            i {color : black;} 
+            i { color : black;
+                position: absolute;
+                left: 6%;
+            line-height: 0;} 
+            img {
+                width : 40%;
+                }
         }
     }
-
     
 .fa-arrow-left {
     font-size: 1.5em;
     } 
 
-.header__logo img {
-    width : 50%;
-    margin: auto;
-    padding-bottom: $padding-size;} 
-
-
 .headerMenus__Resto {
     position: relative;
+    overflow: hidden;
     width : 100%;
     height: 250px;
     margin-top : $padding-size;
@@ -30,13 +29,17 @@
     }
 
 .headerMenus__Resto img {
-    width: 100%;
+    position: absolute;
+    width: 120%;
+    bottom : 15%;
+    left : -10%;
+    transform: translate (0, 5%);
     }
 
 .headerMenus__title {
     position: absolute;
     width: 88%;
-    top: 185px;
+    bottom: -1%;
     background-color: $colors-background;
     border-radius: 50px 50px 0 0;
     font-size: 0.7em;
@@ -58,7 +61,7 @@
     right:$padding-size;
     font-weight: 400;
     font-size: 2.3em;
-        &:active {
+        &:hover {
             :nth-child(1) {
                 display : none;}
             :nth-child(2) {
@@ -67,3 +70,31 @@
             }
         }
 
+@media screen and (min-width: 768px) {
+
+    .headerMenus {
+        &__top {  
+            img {width : 20%;} }
+                }  
+  
+    .headerMenus__Resto {
+        height: 400px;
+        }
+    .headerMenus__Resto img {
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        }  
+
+    .headerMenus__title {
+        min-width: 50%;
+        max-width : 80%;
+        top : 80%;
+        bottom: 0%;
+        border-radius: 0 50px 0 0;
+        font-size: 1em;
+        padding: 0 0 0 $padding-size;
+        }            
+
+}

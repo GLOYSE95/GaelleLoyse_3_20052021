@@ -3,17 +3,98 @@
     width : 88%;
     background-color: $colors-background;
     }
-       
-.menu__desription {
+
+.meal {
+    animation : animDescript 2000ms 150ms both;
+    animation-timing-function: ease-in-out;}
+   
+.description {
+    width :85%;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow : ellipsis;
+    white-space: nowrap;
+    transform-origin: left;
+    transition : all 0.8s ease-in-out;
+    }
+
+.price {
+    display : block;
+    position:absolute;
+    top: 52%;
+    right: 3%;
+    transform: translate(0%, 0%);
+    transition-duration: 0.5s;
+}
+    
+.meal {
+    position: relative;
     border-radius: 0.8em;
     background-color: white;
-    /*box-shadow: 0 0 0.5em grey;*/
     @include shadow-all;
     padding: 0.4em 0.8em;
     margin-top: 1em;
-    }
-    
-.commande {
-    text-align: center;
-} 
+    cursor: pointer;
+        &:hover{
+            .description div {
+                text-overflow : ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                height: 1.25em;
+                width : 200px ;}   
+            .price {
+                transform: translate(-220%, 0%);}
+            .meal__confirm {
+                transform: scaleX(1) ;}
+            span i{
+                transform: rotate(0deg);
+                transition-duration: 500ms;}
+                }
+            }    
 
+.meal__confirm {
+    background-color: $colors-tertiaire;
+    color : white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 100%;
+    border-radius: 0 0.4em 0.4em 0;
+    line-height: 2.1;
+    text-align: center;
+    font-size: 1.5em;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition : transform 500ms 0.2s ease-in-out both;
+        span i {
+            transform: rotate(-180deg);
+            }
+    }
+
+.commande {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 32%;}
+        
+        .description {
+            width: 85%;
+            height: 60px;
+            max-height: none;
+            overflow: hidden;
+            text-overflow : ellipsis;
+            white-space: nowrap; }
+
+    }

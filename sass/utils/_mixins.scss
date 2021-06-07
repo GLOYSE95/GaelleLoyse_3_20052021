@@ -1,0 +1,6 @@
+@mixin shadow-all ($color : $color-shadow) { 
+    box-shadow: $shadow-size ($color)};
+
+@mixin shadow-all__hover ($color : $color-shadow) { 
+        box-shadow: $shadow-size darken($color, 40%)};
+

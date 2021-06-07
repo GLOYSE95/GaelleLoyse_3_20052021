@@ -4,8 +4,8 @@
   "description": "Projet P3",
   "main": "index.js",
   "scripts": {
-    "sass style": "sass --watch ./sass/style.scss:./css/style.css",
-    "sass menu": "sass --watch ./sass/menu.scss:./css/stylemenu.css"
+    "sass1": "node-sass sass/style.scss css/style.css -w", 
+    "sass2": "node-sass sass/menu.scss css/stylemenu.css -w"
   },
 
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021/issues"
   },
-  "homepage": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021#readme"
+  "homepage": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
 }
