@@ -29,4 +29,41 @@
             color: $colors-secondary;
         }
     }
+span {
+    position: relative ;
+    bottom: 0.2em;
+    }
+
+span i {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    -o-transform: rotate(330deg);
+    transform: rotate(330deg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        .footer__logo img {
+            width: 15%;}
+                
+        .footer__logo {
+            text-align: center;}
+        
+        .footer ul li {
+            text-align: center}
+    
+        }
+
+
+    @media screen and (min-width: 769px) and (max-width: 1199px) {
+        .footer__logo img {
+            width: 15%;}
+                    
+        .footer__logo {
+            text-align: center;}
+        
+        .footer ul li {
+                text-align: center}
+    
+    }          
 /*vertical-align: 15%  fa-rotate-90*/
