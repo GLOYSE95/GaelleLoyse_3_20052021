@@ -34,11 +34,7 @@ span {
     bottom: 0.2em;
     }
 
-span i {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(330deg);
-    -ms-transform: rotate(330deg);
-    -o-transform: rotate(330deg);
+.rotate i {
     transform: rotate(330deg);
     }
 

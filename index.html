@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <header class="header">
         <img class="header__logo" src="imports/ohmyfood@2x.svg" alt="logo Ohmyfood">
         
@@ -25,7 +25,7 @@
             <input type="text" placeholder="Paris, Beleville">
         </div>
         <div class="header__reserved">
-            <h1>Réservez le menu qui <br> vous convient</h1>
+            <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, <br>
             sélectionnés par nos soins.</p>
             <button type="button" class="buttonOhmyfood">Explorer nos restaurants</button>
@@ -34,29 +34,29 @@
 
     <section class="fonction">
         <h2>Fonctionnement</h2> 
-        <buttom class="fonction__text">
+        <div class="fonction__text">
             <div class="fonction__line">
                 <i class="fa fa-mobile" aria-hidden="true"></i>
                 <p><strong>Choisissez un restaurant</strong></p>
             </div>
             <div class="bullet"><p> 1 </p></div>
-        </buttom>
+        </div>
 
-        <buttom class="fonction__text">
+        <div class="fonction__text">
             <div class="fonction__line">
                 <i class="fa fa-bars" aria-hidden="true"></i>
                 <p><strong>Choisissez votre menu</strong></p>
             </div>
             <div class="bullet"><p> 2 </p></div>
-        </buttom>
+        </div>
 
-        <buttom class="fonction__text">
+        <div class="fonction__text">
             <div class="fonction__line">
                 <i class="fa fa-store"></i>
                 <p><strong>Dégustez au restaurant</strong></p>
             </div>
             <div class="bullet"><p> 3 </p></div>
-        </buttom>
+        </div>
 
     </section>
     
@@ -64,7 +64,7 @@
         <h2>Restaurants</h2>
 
         <article class="resto__article">
-            <a href="menu_palette.html">
+        <a href="menu_palette.html">
             <div class="articleImg">
                 <img class="img__palette" src="imports/la_palette_1100px.jpg" alt="La palette à du goût">
             </div>
@@ -72,11 +72,13 @@
             <div class="resto__title">
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
+            </div>    
+        </a>
                 <div class="article__like">
-                    <i class="far fa-heart"></i>
-                </div>
-            </div>
-            </a>
+                    <div class="heart"><span><i class="fa fa-heart-o"></i></span></div>
+                    <div class="heart--active"><span><i class="fa fa-heart faHeartActive"></i></span></div>
+                </div> 
+            
         </article>
 
         <article class="resto__article">
@@ -88,11 +90,13 @@
             <div class="resto__title">
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
+            </div>    
+        </a>
                 <div class="article__like">
-                    <i class="far fa-heart"></i>
-                </div>
-            </div>
-            </a>
+                    <span class="heart"><i class="fa fa-heart-o"></i></span>
+                    <span class="heart--active"><i class="fa fa-heart faHeartActive"></i></span>
+                </div> 
+            
         </article>
 
         <article class="resto__article">
@@ -103,12 +107,14 @@
             <div class="resto__title">
                 <h3>À la française</h3>
                 <p>Cité rouge</p>
+            </div>    
+        </a>
                 <div class="article__like">
-                    <i class="far fa-heart"></i>
-                </div>
-            </div>
-            </a>
-        </article> 
+                    <span class="heart"><i class="fa fa-heart-o"></i></span>
+                    <span class="heart--active"><i class="fa fa-heart faHeartActive"></i></span>
+                </div> 
+            
+        </article>
 
         <article class="resto__article">
             <a href="menu_delice.html">
@@ -118,20 +124,24 @@
             <div class="resto__title">
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
+            </div>    
+        </a>
                 <div class="article__like">
-                    <i class="far fa-heart"></i>
-                </div>
-            </div>
-            </a>
+                    <span class="heart"><i class="fa fa-heart-o"></i></span>
+                    <span class="heart--active"><i class="fa fa-heart faHeartActive"></i></span>
+                </div> 
+            
         </article>
     </section>
 
 
         <footer class="footer">
-            <div class="footer__logo"><img src="imports/ohmyfoodwhite.png" alt="logo Ohmyfood"></div>
-            <ul clas="footer__list">
+            <div class="footer__logo">
+                <img src="imports/ohmyfoodwhite.png" alt="logo Ohmyfood">
+            </div>
+            <ul class="footer__list">
                 <li><i class="fa fa-cutlery" aria-hidden="true"></i>Proposer un restaurant</li>
-                <li><i class="fa fa-handshake-o"  data-fa-transform="rotate-30" aria-hidden="true"></i>Devenir partenaire</li>
+                <li><span class=rotate><i class="fa fa-handshake-o"></i></span>Devenir partenaire</li>
                 <li>Mentions légales</li>
                 <li><a href="mailto:ohmyfood@serveur.com">Contact</a></li>
             </ul>

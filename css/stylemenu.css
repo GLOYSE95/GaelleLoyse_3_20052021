@@ -75,7 +75,7 @@ strong {
   width: 120%;
   bottom: 15%;
   left: -8%;
-  transform: translate 0, 5%; }
+  transform: translateY(5%); }
 
 .headerMenus__title {
   position: absolute;
@@ -104,7 +104,7 @@ strong {
     display: none; }
   .titleHeart:hover :nth-child(2) {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 1.5s;
     cursor: pointer; }
 
 @media screen and (min-width: 768px) {
@@ -134,16 +134,30 @@ strong {
   width: 88%;
   background-color: #e9e7e9; }
 
-.meal {
-  animation: animDescript 2000ms 150ms both;
+article {
+  opacity: 0.5; }
+
+article:nth-of-type(1) {
+  opacity: 1;
+  transition: opacity 2500ms;
+  animation: animDescript 500ms 150ms both;
+  animation-timing-function: ease-in-out; }
+
+article:nth-of-type(2) {
+  opacity: 1;
+  transition: opacity 2500ms;
+  animation: animDescript 1000ms 180ms both;
+  animation-timing-function: ease-in-out; }
+
+article:nth-of-type(3) {
+  opacity: 1;
+  transition: opacity 2500ms;
+  animation: animDescript 1500ms 200ms both;
   animation-timing-function: ease-in-out; }
 
 .description {
   width: 85%;
   height: 40px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   transition: all 0.8s ease-in-out; }
 
 .price {
@@ -163,11 +177,12 @@ strong {
   margin-top: 1em;
   cursor: pointer; }
   .meal:hover .description div {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     height: 20px;
     width: 200px; }
+    .meal:hover .description div p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   .meal:hover .price {
     transform: translate(-220%, 0%); }
   .meal:hover .meal__confirm {
@@ -192,7 +207,8 @@ strong {
   transition: transform 500ms 0.2s ease-in-out both; }
   .meal__confirm span i {
     transform: rotate(-180deg);
-    line-height: 2.6em; }
+    line-height: 2.4em;
+    bottom: 5%; }
 
 .commande {
   text-align: center;
@@ -217,16 +233,16 @@ strong {
   .meal:hover .description div {
     white-space: normal;
     overflow: hidden;
-    width: 220px;
+    width: 200px;
     height: 40px; }
   .price {
     top: 70%; }
   .description div:nth-child(2) {
     align-content: flex-end; }
   .meal__confirm {
-    line-height: 4; } }
+    line-height: 4.4em; } }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 780px) and (max-width: 1199px) {
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -234,53 +250,24 @@ strong {
   article {
     width: 32%; }
   .description {
+    white-space: normal;
     width: 85%;
-    height: 80px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal; }
+    height: 80px; }
     .description p {
       height: 40px;
       line-height: 1.5em; }
   .meal:hover .description div {
-    white-space: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
-    width: 140px;
-    height: 40px; }
+    width: 120px;
+    height: 42px; }
   .price {
     top: 70%; }
   .description div:nth-child(2) {
     align-content: flex-end; }
   .meal__confirm {
-    line-height: 4.4; } }
-
-@media screen and (min-width: 768px) and (max-width: 767px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  article {
-    width: 32%; }
-  .description {
-    width: 85%;
-    height: 80px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal; }
-    .description p {
-      height: 40px;
-      line-height: 1.5em; }
-  .meal:hover .description div {
-    white-space: normal;
-    overflow: hidden;
-    width: 140px;
-    height: 40px; }
-  .price {
-    top: 70%; }
-  .description div:nth-child(2) {
-    align-content: flex-end; }
-  .meal__confirm {
-    line-height: 4.4; } }
+    line-height: 4.4em; } }
 
 @media screen and (max-width: 360px) {
   .description {
@@ -297,7 +284,12 @@ strong {
   .price {
     top: 70%; }
   .meal__confirm {
-    line-height: 4.4; } }
+    width: 50px;
+    line-height: 3em; }
+    .meal__confirm span {
+      top: 10%; }
+  .meal:hover .price {
+    transform: translate(-150%, 0%); } }
 
 .footer {
   background-color: black;
@@ -328,11 +320,7 @@ span {
   position: relative;
   bottom: 0.2em; }
 
-span i {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(330deg);
-  -ms-transform: rotate(330deg);
-  -o-transform: rotate(330deg);
+.rotate i {
   transform: rotate(330deg); }
 
 @media screen and (min-width: 1200px) {
@@ -365,6 +353,6 @@ span i {
   background-image: linear-gradient(#FF79DA 0%, rgba(1, 0, 0, 0.3) 100%);
   box-shadow: 0 0 0.5em #bdbdbd; }
 
-.buttonOhmyfood:focus {
+.buttonOhmyfood:hover {
   box-shadow: 0 0 0.5em #575757;
   background-image: linear-gradient(#FF79DA 50%, rgba(156, 20, 136, 0) 100%); }

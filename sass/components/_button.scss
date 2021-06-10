@@ -12,7 +12,7 @@
     @include shadow-all; }   
 
     
-.buttonOhmyfood:focus {
+.buttonOhmyfood:hover {
         @include shadow-all__hover;
         background-image: linear-gradient($colors-secondary 50%, rgba(156, 20, 136, 0) 100%);
     }

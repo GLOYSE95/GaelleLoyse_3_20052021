@@ -33,7 +33,7 @@
     width: 120%;
     bottom : 15%;
     left : -8%;
-    transform: translate (0, 5%);
+    transform: translateY(5%);
     }
 
 .headerMenus__title {
@@ -63,11 +63,11 @@
     font-size: 2.3em;
         &:hover {
             :nth-child(1) {
-                display : none;}
+            display : none;}
             :nth-child(2) {
-                opacity :1;
-                transition : opacity 1s;
-                    cursor: pointer;
+            opacity :1;
+            transition : opacity 1.5s;
+            cursor: pointer;
 }
             }
         }
@@ -86,10 +86,10 @@
         width: 100%;
         top: 40%;
         left: 50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
         }  
 
-    .headerMenus__title {
+    .headerMenus__title { 
         min-width: 50%;
         max-width : 80%;
         top : 80%;
