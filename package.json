@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass1": "node-sass sass/style.scss css/style.css -w", 
-    "sass2": "node-sass sass/menu.scss css/stylemenu.css -w"
+    "sass2": "node-sass sass/menu.scss css/stylemenu.css -w",
+    "prefix1" : "postss ./css/style.css --use autoprefixer -d .css/prefixed/",
+    "prefix2" : "postss ./css/stylemenu.css --use autoprefixer -d .css/prefixed/"
+
   },
 
   "repository": {
@@ -14,6 +17,7 @@
   },
   "author": "gloyse",
   "license": "ISC",
+  "browserlist" : "last 4 versions",
   "bugs": {
     "url": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021/issues"
   },

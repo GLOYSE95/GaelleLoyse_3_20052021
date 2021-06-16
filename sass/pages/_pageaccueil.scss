@@ -1,3 +1,30 @@
+.load {
+    position: fixed;
+    top: 320px; bottom: 0; left: 0; right: 0;
+    width : 100%;
+    background-color:transparent;
+    height : 1px;
+        div {
+        position: absolute;
+        opacity : 1;
+        top : 0; bottom:0; left:0; right: 0;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        border-width : 5px;
+        border-style: solid;
+        border-color:$colors-secondary $colors-secondary $colors-secondary white;
+        box-shadow: 0 0 1em $colors-primary inset, 0 0 3em $colors-secondary;
+        border-radius: 50%;
+        animation : loadingSpinner $animation-delay cubic-bezier(.24,.65,.79,.45) 3;
+        animation-fill-mode: forwards;
+        }
+    }
+.page {
+    animation : pagetranslate 0s $animation-delay*3 both;
+    transform: translateX(-9999px);
+}
+
 .header{
     margin-top : $padding-size;
     img {
@@ -9,7 +36,7 @@
                 
 .header__search {
     background-color: lightgrey;
-    border-top: 0.2em solid black;
+    border-top: 0.2em solid black; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +90,7 @@
         position: relative;
         &:hover{
             background-color: $colors-primaryLight ;
+            cursor: pointer;
             @include shadow-all__hover;
             div .fa {
                 color : $colors-primary;}
@@ -129,20 +157,16 @@ div .fa {
 .img {
     &__palette {
         width: 102%;
-        object-position: 0 -35px;
-        }
+        object-position: 0px -35px;}
     &__note {
         width: 105%;
-        object-position: -10px -155px;
-        }  
+        object-position: -10px -155px;} 
     &__franc {
         width: 105%;
-        object-position: -5px -45px;
-        } 
+        object-position: -5px -45px;} 
     &__delice {
         width: 105%;
-        object-position: 0 -50px;
-        } 
+        object-position: 0px -50px;} 
     }
 
 .resto__title {
@@ -172,14 +196,14 @@ div .fa {
         .heart {
             opacity:0;
             transition : opacity 0.3s;}
-    &:active .heart--active {
+    &:hover .heart--active {
         opacity: 1;
         transition : opacity 1s;}
             }
-    }
+        }
        
 
-@media screen and (min-width: 1161px)  {
+@media all and (min-width: 1160px)  {
 
         .header { 
             width : 100%;
@@ -228,15 +252,11 @@ div .fa {
             flex-wrap: wrap;
             justify-content: space-between;
                 &__article {
-                width : 48%;
-                }
+                width : 48%;}
             }
 
         .resto h2 {
-            width : 100%;
-            }
-
-        }
+            width : 100%;}
         
 .articleImg {
     overflow: hidden;
@@ -248,23 +268,20 @@ div .fa {
 .img {
     &__palette {
         width: 102%;
-        object-position: 0 -90px;
-        }
+        object-position: 0px -90px;}
     &__note {
         width: 105%;
-        object-position: -10px -280px;
-        }  
+        object-position: -10px -280px;}  
     &__franc {
         width: 105%;
-        object-position: -5px -135px;
-        } 
+        object-position: -5px -135px;} 
     &__delice {
         width: 105%;
-        object-position: 0 -100px;
-        } 
+        object-position: 0px -100px;} 
     }
+}
 
-@media screen and (min-width: 768px) and (max-width : 1160px)  {
+@media screen and (min-width: 769px) and (max-width : 1160px) {
 
         .header { 
             width : 100%;
@@ -331,25 +348,21 @@ div .fa {
     .img {
         &__palette {
             width: 102%;
-            object-position: 0 -20px;
-            }
+            object-position: 0 -20px;}
         &__note {
             width: 105%;
-            object-position: -10px -200px;
-            }  
+            object-position: -10px -200px;}  
         &__franc {
             width: 120%;
-            object-position: -5px -50px;
-            } 
+            object-position: -5px -50px;} 
         &__delice {
             width: 120%;
-            object-position: 0 -50px;
-            } 
+            object-position: 0 -50px;} 
         }
     }    
         
     
-@media screen and (max-width: 375px)  {
+@media screen and (max-width: 376px) {
         
 .articleImg {
     overflow: hidden;
@@ -360,21 +373,12 @@ div .fa {
     
 .img {
     &__palette {
-        object-position: 0 0;
-        }
+        object-position: 0 0;}
     &__note {
-        object-position: -10px -120px;
-        }  
+        object-position: -10px -120px;}  
     &__franc {
-        object-position: -5px -25px;
-        } 
+        object-position: -5px -25px;} 
     &__delice {
-        object-position: 0 -20px;
-        } 
+        object-position: 0 -20px;} 
     }
 }
-
-    /* @media screen and (max-width: 360px) {
-
-    
-    } */

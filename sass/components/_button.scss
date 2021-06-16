@@ -8,11 +8,11 @@
     cursor: pointer;
     color: #fff;
     background-color: $colors-secondary;
-    background-image: linear-gradient($colors-secondary 0%, rgba(0.8, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(to bottom right, $colors-secondary 0%, rgb(180, 95, 214) 70%);
     @include shadow-all; }   
 
     
 .buttonOhmyfood:hover {
         @include shadow-all__hover;
-        background-image: linear-gradient($colors-secondary 50%, rgba(156, 20, 136, 0) 100%);
+        background-image: linear-gradient(to bottom right, $colors-secondary 0%,  rgb(212, 115, 250) 70%);
     }
