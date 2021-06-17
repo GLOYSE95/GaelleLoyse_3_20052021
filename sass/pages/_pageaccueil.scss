@@ -18,7 +18,7 @@
         border-radius: 50%;
         animation : loadingSpinner $animation-delay cubic-bezier(.24,.65,.79,.45) 3;
         animation-fill-mode: forwards;
-        }
+        } 
     }
 .page {
     animation : pagetranslate 0s $animation-delay*3 both;

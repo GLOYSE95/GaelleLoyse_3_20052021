@@ -6,9 +6,8 @@
   "scripts": {
     "sass1": "node-sass sass/style.scss css/style.css -w", 
     "sass2": "node-sass sass/menu.scss css/stylemenu.css -w",
-    "prefix1" : "postss ./css/style.css --use autoprefixer -d .css/prefixed/",
-    "prefix2" : "postss ./css/stylemenu.css --use autoprefixer -d .css/prefixed/"
-
+    "prefix1" : "postcss css/style.css --use autoprefixer -d css/prefixed/",
+    "prefix2" : "postcss css/stylemenu.css --use autoprefixer -d css/prefixed/"
   },
 
   "repository": {
@@ -21,6 +20,7 @@
   "bugs": {
     "url": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021/issues"
   },
+  
   "homepage": "https://github.com/GLOYSE95/GaelleLoyse_3_20052021#readme",
   "devDependencies": {
     "node-sass": "^6.0.0"
