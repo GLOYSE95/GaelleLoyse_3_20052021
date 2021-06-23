@@ -1,3 +1,5 @@
+
+
 .headerMenus {
     margin-top : $padding-size;
         &__top {  
@@ -50,27 +52,35 @@
     }
 
 
-.heart__active {
+.headerMenus__Resto img.heart__active {
     opacity :0;
-    background: linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+    width: 80%;
+    top: 48%;
+    left: 48%;}
+
+.headerMenus .heart__active img{
+    width : 30px;
+}
+
+    /*background: linear-gradient(to top, #ff79da 0%, #9356dc 100%);
 	background-clip: text;
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    }
+	-webkit-text-fill-color: transparent;*/
+    
         
 .titleHeart {   
     width:40Px; 
-    height:30px;
     position : absolute;
     right:$padding-size;
     font-weight: 400;
     font-size: 2.3em;
         &:hover {
             :nth-child(1) {
-            display : none;}
+            display : none;
+            }
             :nth-child(2) {
             opacity :1;
-            transition : opacity 2s;
+            transition : opacity 3s;
             cursor: pointer;
                 }
             }
@@ -95,6 +105,8 @@
         transform: translate(-50%, -50%);
         }  
 
+
+
     .headerMenus__title { 
         min-width: 50%;
         max-width : 80%;
@@ -107,7 +119,18 @@
 
 }
 
-@media screen and (max-width: 360px) {
-.headerMenus__title h1{
-    font-size: 1.8em;}  
-    }
+@media screen and (max-width: 767px){
+    .headerMenus__title h1{
+        font-size: 1.8em;}  
+    
+        .headerMenus__Resto img.heart__active {
+            opacity :0;
+            width: 65%;
+            top: 15%;
+            left: 0%;}
+
+        .titleHeart {   
+            top: 45%;}   
+                    
+        }
+        
