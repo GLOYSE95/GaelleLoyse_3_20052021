@@ -48,13 +48,17 @@
     align-items: center;
     padding: $padding-size $padding-size 2% $padding-size;
     }
-    
+
+
 .heart__active {
-    color: $colors-secondary;
     opacity :0;
+    background: linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+	background-clip: text;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     }
         
-.titleHeart {
+.titleHeart {   
     width:40Px; 
     height:30px;
     position : absolute;
@@ -66,11 +70,13 @@
             display : none;}
             :nth-child(2) {
             opacity :1;
-            transition : opacity 1.5s;
+            transition : opacity 2s;
             cursor: pointer;
-}
+                }
             }
         }
+    
+
 
 @media screen and (min-width: 768px) {
 

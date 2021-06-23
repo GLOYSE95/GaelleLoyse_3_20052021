@@ -7,7 +7,6 @@
 
 @-webkit-keyframes animDescript {
   0% {
-    opacity: 0;
     -webkit-transform: translateY(20px);
             transform: translateY(20px); }
   30% {
@@ -20,7 +19,6 @@
 
 @keyframes animDescript {
   0% {
-    opacity: 0;
     -webkit-transform: translateY(20px);
             transform: translateY(20px); }
   30% {
@@ -30,6 +28,48 @@
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
+@-webkit-keyframes loadingSpinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  30% {
+    opacity: 0.7; }
+  99% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  100% {
+    opacity: 0;
+    display: none; } }
+
+@keyframes loadingSpinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  30% {
+    opacity: 0.7; }
+  99% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  100% {
+    opacity: 0;
+    display: none; } }
+
+@-webkit-keyframes pagetranslate {
+  0% {
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes pagetranslate {
+  0% {
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 html {
   font-size: 1rem;
@@ -128,8 +168,13 @@ strong {
   padding: 6% 6% 2% 6%; }
 
 .heart__active {
-  color: #FF79DA;
-  opacity: 0; }
+  opacity: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9356dc));
+  background: -o-linear-gradient(bottom, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .titleHeart {
   width: 40Px;
@@ -142,9 +187,9 @@ strong {
     display: none; }
   .titleHeart:hover :nth-child(2) {
     opacity: 1;
-    -webkit-transition: opacity 1.5s;
-    -o-transition: opacity 1.5s;
-    transition: opacity 1.5s;
+    -webkit-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
     cursor: pointer; }
 
 @media screen and (min-width: 768px) {
@@ -270,6 +315,7 @@ article:nth-of-type(3) {
   width: 65px;
   height: 100%;
   border-radius: 0 0.4em 0.4em 0;
+  border: 1px solid #99E2D0;
   text-align: center;
   font-size: 1.5em;
   -webkit-transform: scaleX(0);
