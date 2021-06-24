@@ -20,131 +20,130 @@
         <div class="load__spinner"></div> 
     </div>
 
-<div class="page">
-    <header class="header">
-        <img class="header__logo" src="imports/ohmyfood@2x.svg" alt="logo Ohmyfood">
+    <div class="page">
+        <header class="header">
+            <img class="header__logo" src="imports/ohmyfood@2x.svg" alt="logo Ohmyfood">
+            <div class="header__search">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <input type="text" placeholder="Paris, Beleville">
+            </div>
+            
+            <div class="header__reserved"> 
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, <br>
+                sélectionnés par nos soins.</p>
+                <button type="button" class="buttonOhmyfood">Explorer nos restaurants</button>
+            </div>
+        </header>
+
+        <section class="fonction">
+            <h2>Fonctionnement</h2> 
+            <div class="fonction__text">
+                <div class="fonction__line">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p><strong>Choisissez un restaurant</strong></p>
+                </div>
+                <div class="bullet"><p> 1 </p></div>
+            </div>
+
+            <div class="fonction__text">
+                <div class="fonction__line">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <p><strong>Choisissez votre menu</strong></p>
+                </div>
+                <div class="bullet"><p> 2 </p></div>
+            </div>
+
+            <div class="fonction__text">
+                <div class="fonction__line">
+                    <i class="fa fa-store"></i>
+                    <p><strong>Dégustez au restaurant</strong></p>
+                </div>
+                <div class="bullet"><p> 3 </p></div>
+            </div>
+
+        </section>
         
-        <div class="header__search">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <input type="text" placeholder="Paris, Beleville">
-        </div>
-        
-        <div class="header__reserved"> 
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, <br>
-            sélectionnés par nos soins.</p>
-            <button type="button" class="buttonOhmyfood">Explorer nos restaurants</button>
-        </div>
-    </header>
+        <section class="resto">
+            <h2>Restaurants</h2>
 
-    <section class="fonction">
-        <h2>Fonctionnement</h2> 
-        <div class="fonction__text">
-            <div class="fonction__line">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                <p><strong>Choisissez un restaurant</strong></p>
-            </div>
-            <div class="bullet"><p> 1 </p></div>
-        </div>
-
-        <div class="fonction__text">
-            <div class="fonction__line">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <p><strong>Choisissez votre menu</strong></p>
-            </div>
-            <div class="bullet"><p> 2 </p></div>
-        </div>
-
-        <div class="fonction__text">
-            <div class="fonction__line">
-                <i class="fa fa-store"></i>
-                <p><strong>Dégustez au restaurant</strong></p>
-            </div>
-            <div class="bullet"><p> 3 </p></div>
-        </div>
-
-    </section>
-    
-    <section class="resto">
-        <h2>Restaurants</h2>
-
-        <article class="resto__article">
-            <a href="menu_palette.html">
-                <div class="articleImg">
-                    <img class="img__palette" src="imports/la_palette_1100px.jpg" alt="La palette à du goût">
-                </div>
-                <div class="article__nouveau">Nouveau</div>
-                <div class="resto__title">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>    
-            </a>
-            <div class="article__like">
-                <span class="heart"><i class="fa fa-heart-o"></i></span>
-                <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
-            </div> 
-            
-        </article>
-
-        <article class="resto__article">
-            <a href="menu_note.html">
-                <div class="articleImg">
-                    <img class= "img__note" src="imports/la_note_1100px.jpg" alt="La note enchantée">
-                </div>
-                <div class="article__nouveau">Nouveau</div>
-                <div class="resto__title">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                </div>    
-            </a>
-            <div class="article__like">
-                <span class="heart"><i class="fa fa-heart-o"></i></span>
-                <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
-            </div>  
-            
-        </article>
-
-        <article class="resto__article">
-            <a href="menu_franc.html">
-                <div class="articleImg">
-                    <img class= "img__franc" src="imports/a_la_fr_1100px.jpg" alt="A la française">
-                </div>
-                <div class="resto__title">
-                    <h3>À la française</h3>
-                    <p>Cité rouge</p>
-                </div>    
-            </a>
-            <div class="article__like">
-                <span class="heart"><i class="fa fa-heart-o"></i></span>
-                <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
-            </div>  
-            
-        </article>
-
-        <article class="resto__article">
-            <a href="menu_delice.html">
-                <div class="articleImg">
-                    <img  class= "img__delice" src="imports/le_delice_1100px.jpg" alt="Le délice des sens">
-                </div>
-                <div class="resto__title">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                </div>    
-            </a>
+            <article class="resto__article">
+                <a href="menu_palette.html">
+                    <div class="articleImg">
+                        <img class="img__palette" src="imports/la_palette_1100px.jpg" alt="La palette à du goût">
+                    </div>
+                    <div class="article__nouveau">Nouveau</div>
+                    <div class="resto__title">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>    
+                </a>
                 <div class="article__like">
                     <span class="heart"><i class="fa fa-heart-o"></i></span>
                     <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
                 </div> 
+                
+            </article>
 
-                <!--<div class="article__like">
+            <article class="resto__article">
+                <a href="menu_note.html">
+                    <div class="articleImg">
+                        <img class= "img__note" src="imports/la_note_1100px.jpg" alt="La note enchantée">
+                    </div>
+                    <div class="article__nouveau">Nouveau</div>
+                    <div class="resto__title">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>    
+                </a>
+                <div class="article__like">
                     <span class="heart"><i class="fa fa-heart-o"></i></span>
-                    <span class="heart-active"><i class="fa fa-heart faHeartActive"></i></span>
-                </div> -->
-            
-        </article>
-    </section>
+                    <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
+                </div>  
+                
+            </article>
 
-    
+            <article class="resto__article">
+                <a href="menu_franc.html">
+                    <div class="articleImg">
+                        <img class= "img__franc" src="imports/a_la_fr_1100px.jpg" alt="A la française">
+                    </div>
+                    <div class="resto__title">
+                        <h3>À la française</h3>
+                        <p>Cité rouge</p>
+                    </div>    
+                </a>
+                <div class="article__like">
+                    <span class="heart"><i class="fa fa-heart-o"></i></span>
+                    <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
+                </div>  
+                
+            </article>
+
+            <article class="resto__article">
+                <a href="menu_delice.html">
+                    <div class="articleImg">
+                        <img  class= "img__delice" src="imports/le_delice_1100px.jpg" alt="Le délice des sens">
+                    </div>
+                    <div class="resto__title">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>    
+                </a>
+                    <div class="article__like">
+                        <span class="heart"><i class="fa fa-heart-o"></i></span>
+                        <img class="heart--active" src="imports/heartGradient.svg" alt="i like it">
+                    </div> 
+
+                    <!--<div class="article__like">
+                        <span class="heart"><i class="fa fa-heart-o"></i></span>
+                        <span class="heart-active"><i class="fa fa-heart faHeartActive"></i></span>
+                    </div> -->
+                
+            </article>
+        </section>
+
+        
         <footer class="footer">
             <div class="footer__logo">
                 <img src="imports/ohmyfoodwhite.png" alt="logo Ohmyfood">
@@ -155,10 +154,8 @@
                 <li>Mentions légales</li>
                 <li><a href="mailto:ohmyfood@serveur.com">Contact</a></li>
             </ul>
-        </footer>
-</div>
-
-
+        </footer>   
+    </div>
 
 </body>
 </html>

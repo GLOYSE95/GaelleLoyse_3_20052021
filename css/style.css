@@ -72,7 +72,7 @@ a {
     border-width: 5px;
     border-style: solid;
     border-color: #FF79DA #FF79DA #FF79DA white;
-    box-shadow: 0 0 1em #d0b2f5 inset, 0 0 3em #FF79DA;
+    box-shadow: 0 0 1em #9356dc inset, 0 0 3em #FF79DA;
     border-radius: 50%;
     animation: loadingSpinner 0.8s cubic-bezier(0.24, 0.65, 0.79, 0.45) 3;
     animation-fill-mode: forwards; }
@@ -90,10 +90,10 @@ a {
     padding-bottom: 6%; }
 
 .header__search {
-  background-color: lightgrey;
-  border-top: 0.2em solid black;
+  background-color: #e4e3e4;
   display: flex;
   align-items: center;
+  box-shadow: inset 0 2px 2px #d1d1d1;
   justify-content: center; }
   .header__search .fa {
     color: black; }
@@ -107,7 +107,7 @@ a {
     text-align: center; }
 
 .header__reserved {
-  background-color: #e9e7e9;
+  background-color: #f1f0f1;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%; }
@@ -129,7 +129,7 @@ a {
   flex-direction: column; }
 
 .fonction__text {
-  background-color: #e9e7e9;
+  background-color: #f1f0f1;
   border: 0;
   padding: 1.7em;
   border-radius: 1.5em;
@@ -145,9 +145,9 @@ a {
     cursor: pointer;
     box-shadow: 0 0 0.5em #575757; }
     .fonction__text:hover div .fa {
-      color: #d0b2f5; }
+      color: #9356dc; }
     .fonction__text:hover .bullet {
-      background-color: #d0b2f5; }
+      background-color: #9356dc; }
 
 .fonction__line {
   align-items: center;
@@ -161,7 +161,7 @@ div .fa {
 
 .bullet {
   position: absolute;
-  background-color: #FF79DA;
+  background-color: #9356dc;
   border-radius: 1.2em;
   padding: 0.2em 0.6em;
   color: white;
@@ -170,7 +170,7 @@ div .fa {
 .resto {
   margin-top: 12%;
   padding: 6%;
-  background-color: #e9e7e9; }
+  background-color: #f1f0f1; }
   .resto__article {
     position: relative;
     background: white;
@@ -384,7 +384,7 @@ div .fa {
     object-position: 0 -20px; } }
 
 .footer {
-  background-color: black;
+  background-color: #3a3837;
   padding: 6%;
   color: white; }
   .footer__logo {
