@@ -33,6 +33,14 @@ article:nth-of-type(3){
     height: 40px;
     }
 
+.description div {
+    height: 22px;
+    p { overflow: hidden;
+        text-overflow : ellipsis;
+        white-space: nowrap;
+        }
+    }
+
 .price {
     display : block;
     position:absolute;
@@ -52,23 +60,25 @@ article:nth-of-type(3){
     cursor: pointer;
         &:hover{
             .description div {
-                height: 20px;
-                width : 200px ;
-                p {
-                    overflow: hidden;
+                height: 22px;
+                width : 80% ;
+                p { overflow: hidden;
                     text-overflow : ellipsis;
-                    white-space: nowrap;}
+                    white-space: nowrap;
+                    }
                 }   
             .price {
-                transform: translate(-220%, 0%);}
+                transform: translate(-220%, 0%);
+                }
             .meal__confirm {
-                transform: scaleX(1) ;}
-            span i{
+                transform: scaleX(1) ;
+                }
+            span i {
                 transform: rotate(0deg);
                 transition-duration: 0.6s;
                 transition-delay : 0.2s;}
                 }
-            }    
+        }    
 
 .meal__confirm {
     background-color: $colors-tertiaire;
@@ -86,7 +96,6 @@ article:nth-of-type(3){
     transform-origin: right;
     transition : transform 0.3s;
     transition-timing-function : ease-in-out ;
-
         span i {
             transform: rotate(-360deg);
             line-height: 1em;
@@ -104,128 +113,162 @@ article:nth-of-type(3){
     
 
 @media screen and (min-width: 1200px){
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
             
-        article {
-            width: 32%;}
+    article {
+        width: 32%;}
             
-        .description {
-            width: 85%;
-            height: 80px;
+    .description {
+        width: 90%;
+        height: 40px;
+        }
+            
+    .description div {
+        height: 20px;
+        p { 
             overflow: hidden;
             text-overflow : ellipsis;
-            white-space:  normal; 
-                p {height: 40px;
-                    line-height: 1.5em;}
+            white-space: nowrap;
             }
+        }
     
-        .meal {
-            &:hover{
-                .description div {
-                white-space: normal;
-                overflow: hidden ;
-                width : 200px ;
-                height: 40px;}   
+    .meal {
+        &:hover {
+            .description div {
+                height: 20px;
+                 width :75% ;
+                } 
+                p { overflow: hidden;
+                    text-overflow : ellipsis;
+                    white-space: nowrap;
                 }  
-            }
-        .price {
-            top: 70%;
-            }
+            }  
+        }
+
+    .price {
+        top: 50%;
+        }
         
-        .description div:nth-child(2){
-            align-content: flex-end;
-            }
+    .description div:nth-child(2){
+        align-content: flex-end;
+        }
 
     .meal__confirm {
         span i {
-            margin-top : 60%;
+            margin-top : 30%;
             }
         }
 
+}       
+    
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+            
+    article {
+        width: 32%;
+        }
+            
+    .description {
+        width: 90%;
+        height: 60px;
+        }
+        
+    .description div {
+        height: 15px;
+        p { overflow: hidden;
+            text-overflow : ellipsis;
+            white-space: nowrap;
+            }
+        }
 
-    }       
-    
-    @media screen and (min-width: 780px) and (max-width: 1199px) {
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            }
-            
-        article {
-            width: 32%;}
-            
-        .description {
-            white-space: normal; 
-            width: 85%;
-            height: 80px;
-                p {height: 40px;
-                    line-height: 1.5em;}
-            }
-    
-        .meal {
-            &:hover{
-                .description div {
+    .meal {
+        &:hover {
+            .description div {
+                height: 15px;
+                width :75% ;
+                } 
+            p { 
+                overflow: hidden;
                 text-overflow : ellipsis;
-                white-space: nowrap ; 
-                overflow: hidden ;
-                width : 120px ;
-                height: 42px;}   
+                white-space: nowrap;
                 }  
-            }
-        .price {
-            top: 70%;
-            }
+            }  
+        }
+
+    .price {
+        top: 68%;
+        }
         
-        .description div:nth-child(2){
-            align-content: flex-end;
-            }
+    .description div:nth-child(2){
+        align-content: flex-end;
+        }
         
-        .meal__confirm {
-            span i {
-                margin-top : 60%;
+    .meal__confirm {
+        span i {
+            margin-top : 50%;
             }
         }
-    }    
+}    
 
     
-    @media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
 
-        .description {
-            height: 80px;
-            white-space:  normal; 
-                p {height: 40px;
-                    line-height: 1.5em;}
-            }
-        .meal {
-            &:hover{
-                .description div {
-                white-space: normal;
-                overflow: hidden ;
-                width : 170px ;
-                height: 40px;}   
-                }  
-            }
-        .price {
-            top: 70%;
-            }
-        
-        .meal__confirm {
-            width: 50px;
-                span i {
-                    line-height: 1.8em;
-                    margin-top : 60%;}
-                }
-
-        .meal {
-            &:hover {
-                .price {
-                transform: translate(-150%, 0%);}
-                }
-            }    
-    
+    .description {
+        width: 90%;
+        height: 32px;
+        }
+       
+    .description div {
+        height: 15px;
+        p {                    
+            font-size : 0.6em;
+        }
     }
+
+    .meal {
+        &:hover{
+        .description div {
+            height: 15px;
+            width :75% ;} 
+            p { 
+                overflow: hidden;
+                text-overflow : ellipsis;
+                white-space: nowrap;
+                }  
+            }  
+        }
+
+    .price {
+        top: 50%;
+        font-size : 0.9em;
+        }
+        
+    .meal__confirm {
+        width: 50px;
+            span i {
+                margin-top : 30%;
+                bottom : 20px;
+            }
+        }
+
+    .meal {
+        &:hover {
+            .price {
+            transform: translate(-170%, 0%);}
+            }
+        }  
+    
+}
+
+
+
+
+        

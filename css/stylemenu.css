@@ -97,7 +97,7 @@ strong {
   position: absolute;
   width: 88%;
   bottom: -1%;
-  background-color: #e9e7e9;
+  background-color: #f1f0f1;
   border-radius: 50px 50px 0 0;
   font-size: 0.7em;
   display: flex;
@@ -163,7 +163,7 @@ strong {
 
 .menu {
   width: 88%;
-  background-color: #e9e7e9; }
+  background-color: #f1f0f1; }
 
 article {
   opacity: 0.5; }
@@ -190,6 +190,13 @@ article:nth-of-type(3) {
   width: 85%;
   height: 40px; }
 
+.description div {
+  height: 22px; }
+  .description div p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
 .price {
   display: block;
   position: absolute;
@@ -207,8 +214,8 @@ article:nth-of-type(3) {
   margin-top: 1em;
   cursor: pointer; }
   .meal:hover .description div {
-    height: 20px;
-    width: 200px; }
+    height: 22px;
+    width: 80%; }
     .meal:hover .description div p {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -256,25 +263,27 @@ article:nth-of-type(3) {
   article {
     width: 32%; }
   .description {
-    width: 85%;
-    height: 80px;
+    width: 90%;
+    height: 40px; }
+  .description div {
+    height: 20px; }
+    .description div p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .meal:hover .description div {
+    height: 20px;
+    width: 75%; }
+  .meal:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: normal; }
-    .description p {
-      height: 40px;
-      line-height: 1.5em; }
-  .meal:hover .description div {
-    white-space: normal;
-    overflow: hidden;
-    width: 200px;
-    height: 40px; }
+    white-space: nowrap; }
   .price {
-    top: 70%; }
+    top: 50%; }
   .description div:nth-child(2) {
     align-content: flex-end; }
   .meal__confirm span i {
-    margin-top: 60%; } }
+    margin-top: 30%; } }
 
 @media screen and (min-width: 780px) and (max-width: 1199px) {
   .menu {
@@ -284,49 +293,56 @@ article:nth-of-type(3) {
   article {
     width: 32%; }
   .description {
-    white-space: normal;
-    width: 85%;
-    height: 80px; }
-    .description p {
-      height: 40px;
-      line-height: 1.5em; }
+    width: 90%;
+    height: 60px; }
+  .description div {
+    height: 15px; }
+    .description div p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   .meal:hover .description div {
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    height: 15px;
+    width: 75%; }
+  .meal:hover p {
     overflow: hidden;
-    width: 120px;
-    height: 42px; }
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .price {
-    top: 70%; }
+    top: 68%; }
   .description div:nth-child(2) {
     align-content: flex-end; }
   .meal__confirm span i {
-    margin-top: 60%; } }
+    margin-top: 50%; } }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
   .description {
-    height: 80px;
-    white-space: normal; }
-    .description p {
-      height: 40px;
-      line-height: 1.5em; }
+    width: 90%;
+    height: 32px; }
+  .description div {
+    height: 15px; }
+    .description div p {
+      font-size: 0.6em; }
   .meal:hover .description div {
-    white-space: normal;
+    height: 15px;
+    width: 75%; }
+  .meal:hover p {
     overflow: hidden;
-    width: 170px;
-    height: 40px; }
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .price {
-    top: 70%; }
+    top: 50%;
+    font-size: 0.9em; }
   .meal__confirm {
     width: 50px; }
     .meal__confirm span i {
-      line-height: 1.8em;
-      margin-top: 60%; }
+      margin-top: 30%;
+      bottom: 20px; }
   .meal:hover .price {
-    transform: translate(-150%, 0%); } }
+    transform: translate(-170%, 0%); } }
 
 .footer {
-  background-color: black;
+  background-color: #3a3837;
   padding: 6%;
   color: white; }
   .footer__logo {
