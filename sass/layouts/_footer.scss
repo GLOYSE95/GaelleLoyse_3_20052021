@@ -18,7 +18,9 @@
             i {
                 font-size : 0.8em;
                 color: white;
-                padding-right : 0.8em;
+                &.fa-cutlery{
+                    padding-right : 0.5em;
+                }
             }
         }
     }
